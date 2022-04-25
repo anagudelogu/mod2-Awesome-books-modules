@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <h2 class="nav__title">
+                Awesome Books
+            </h2>
+            <ul class="nav__links">
+                <li class="nav__link"> <a class="List" href="#">List</a></li>
+                <li class="nav__link"> <a class="New" href="#">Add new</a></li>
+                <li class="nav__link"> <a class="Contact" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date"> </div>
+    </header>
+
+    <main>
+        <section class="book-list active">
+            <h1 class="book-list__title title">All Awesome books</h1>
+            <div class="book-list__book-storage"></div>
+        </section>
+        <section class="add-book">
+            <h2 class="add-book__title title">Add a new book</h2>
+            <form action="#" method="POST">
+                <ul class="add-book__list">
+                    <li class="add-book__input"><input name="title" type="text" placeholder="Title" required></li>
+                    <li class="add-book__input"><input name="author" type="text" placeholder="Author" required></li>
+                    <li class="add-book__input"><button type="button" class="btn">Add</button></li>
+                </ul>
+            </form>
+        </section>
+        <section class="contact">
+            <h2 class="contact__title title">
+                Contact Information
+            </h2>
+            <p class="contact__info">
+                Do you have any questions or you just want to say "Hello"? <br>
+                You can reach out to us!
+            </p>
+            <ul class="contact__list">
+                <li class="contact__list-item">Our e-mail: mail@mail.com</li>
+                <li class="contact__list-item">Our phone number: 0043586534422</li>
+                <li class="contact__list-item">Our address: Streetname 22, 84503 City, Country</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__copy">Copyright</p>
+    </footer>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

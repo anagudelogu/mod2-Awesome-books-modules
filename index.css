@@ -1,0 +1,176 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  max-height: 100vh;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  border: 3px solid black;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav__link {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.date {
+  position: absolute;
+  top: 5vh;
+  right: 2%;
+  font-size: 25px;
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+main {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-list {
+  position: absolute;
+  opacity: 0;
+  width: 60%;
+  transition: all 0.5s;
+  transform: scale(0.1);
+}
+
+.book-list.active {
+  position: static;
+  opacity: 1;
+  z-index: 10;
+  transform: scale(1);
+}
+
+.book-list__book-storage {
+  margin: 0 auto;
+  margin-bottom: 70px;
+  border: 5px solid black;
+  min-height: 200px;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+.remove-btn {
+  padding: 2px 8px;
+}
+
+.add-book {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+  width: 60%;
+  transform: scale(0.1);
+}
+
+.add-book.active {
+  position: static;
+  opacity: 1;
+  z-index: 10;
+  transform: scale(1);
+}
+
+h2.title {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.book:nth-child(odd) {
+  background-color: grey;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+}
+
+hr {
+  border: 1px solid black;
+  width: 50%;
+  height: 0;
+  margin: 0 auto;
+}
+
+form {
+  /* width: 60%; */
+  text-align: center;
+  margin: 0 auto;
+}
+
+input {
+  width: 40%;
+  height: 30px;
+  border: 3px solid black;
+}
+
+.btn {
+  width: 80px;
+  height: 30px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s;
+  transform: scale(0.1);
+}
+
+.contact.active {
+  position: static;
+  opacity: 1;
+  z-index: 10;
+  transform: scale(1);
+}
+
+.contact__list {
+  list-style: disc;
+}
+
+.footer {
+  height: 5vh;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
